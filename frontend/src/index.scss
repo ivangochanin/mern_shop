@@ -7,8 +7,8 @@
 }
 
 html {
-  font-size: 10px;
-  overflow-x: hidden;
+    font-size: 10px; // 1rem = 10px;
+    overflow-x: hidden;
 }
 
 body {
@@ -17,14 +17,14 @@ body {
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-body::-webkit-scrollbar {
-  width: .6rem;
-}
+  &::-webkit-scrollbar {
+    width: .6rem;
+  }
 
-body::-webkit-scrollbar-thumb {
-  background-color: #000;
+  &::-webkit-scrollbar-thumb {
+    background-color: #000;
+  }
 }
 
 a,

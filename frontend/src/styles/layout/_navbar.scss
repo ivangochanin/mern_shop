@@ -1,0 +1,42 @@
+.is-active {
+    color: rgb(223, 248, 109) !important;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    min-height: 8vh;
+    background: rgb(0, 87, 128);
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+
+    .brand {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        a {
+            color: #fff;
+        }
+    }
+
+    .navLinks {
+        width: 70%;
+        padding-right: 30%;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+
+            li {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

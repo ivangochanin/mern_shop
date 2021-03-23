@@ -1,0 +1,41 @@
+.is-active {
+  color: #dff86d !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  min-height: 8vh;
+  background: #005780;
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+.navbar .brand {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.navbar .brand a {
+  color: #fff;
+}
+
+.navbar .navLinks {
+  width: 70%;
+  padding-right: 30%;
+}
+
+.navbar .navLinks ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.navbar .navLinks ul li a {
+  color: #fff;
+}
