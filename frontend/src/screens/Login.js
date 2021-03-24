@@ -2,8 +2,8 @@ import React from 'react'
 
 const Login = () => {
     return (
-        <div className="container">
-            <p>Login</p>
+        <div className="screen screenLogin">
+            <p className="title">Login</p>
         </div>
     )
 }

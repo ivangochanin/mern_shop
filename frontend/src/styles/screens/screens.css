@@ -1,0 +1,58 @@
+.screen {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.4rem;
+}
+
+.screen .title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #383838;
+}
+
+.screenHome .homeCardsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.screenHome .homeCardsWrapper .productCard {
+  width: 270px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
+  box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
+}
+
+.screenHome .homeCardsWrapper .productCard a {
+  color: #3a3a3a;
+}
+
+.screenHome .homeCardsWrapper .productCard a .cardName {
+  min-height: 60px;
+}
+
+.screenHome .homeCardsWrapper .productCard a img {
+  width: 100%;
+}
+
+.screenHome .homeCardsWrapper .productCard a .cardDescription {
+  min-height: 150px;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.screenHome .homeCardsWrapper .productCard a .cardDescription::-webkit-scrollbar {
+  width: .7rem;
+}
+
+.screenHome .homeCardsWrapper .productCard a .cardDescription::-webkit-scrollbar-thumb {
+  background-color: #f7f6f7;
+}

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Cart = () => {
     return (
-        <div className="container">
-            <p>Cart</p>
+        <div className="screen screenCart">
+            <p className="title">Cart</p>
         </div>
     )
 }

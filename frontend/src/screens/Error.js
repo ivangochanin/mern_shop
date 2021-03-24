@@ -2,8 +2,8 @@ import React from 'react'
 
 const Error = () => {
     return (
-        <div>
-            <p>Error</p>
+        <div className="screen screenError">
+            <p className="title">Error</p>
         </div>
     )
 }
