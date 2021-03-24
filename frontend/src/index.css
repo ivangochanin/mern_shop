@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
@@ -12,7 +13,8 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #fff;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -20,11 +22,11 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: .6rem;
+  width: 1rem;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: #3a3a3a;
 }
 
 a,

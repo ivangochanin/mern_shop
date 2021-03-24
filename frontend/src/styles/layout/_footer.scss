@@ -3,9 +3,14 @@
     justify-content: center;
     align-items: center;
     min-height: 5vh;
-    background: rgb(0, 87, 128);
-    color: #fff;
+    background: #fff;
+    color: #000;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+    span {
+        font-family: 'Libre Barcode 39', cursive;
+        font-size: 2rem;
+    }
 }

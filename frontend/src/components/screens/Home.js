@@ -2,8 +2,8 @@ import React from 'react'
 
 const HomeScreen = () => {
     return (
-        <div>
-            <h1>Welcome To ProShop</h1>
+        <div className="container">
+            <p>Welcome To ProShop</p>
         </div>
     )
 }

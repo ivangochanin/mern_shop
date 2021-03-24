@@ -19,11 +19,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   &::-webkit-scrollbar {
-    width: .6rem;
+    width: 1rem;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #000;
+    background-color: #3a3a3a;
   }
 }
 
