@@ -11,16 +11,11 @@
 }
 
 .screenHome .homeCardsWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .screenHome .homeCardsWrapper .productCard {
@@ -28,6 +23,7 @@
   margin-top: 20px;
   padding: 20px;
   -webkit-box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
   box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
 }
 
@@ -36,23 +32,20 @@
 }
 
 .screenHome .homeCardsWrapper .productCard a .cardName {
-  min-height: 60px;
+  height: 60px;
+  overflow: auto;
+  line-height: 17.5px;
+}
+
+.screenHome .homeCardsWrapper .productCard a .cardName::-webkit-scrollbar {
+  width: .7rem;
+}
+
+.screenHome .homeCardsWrapper .productCard a .cardName::-webkit-scrollbar-thumb {
+  background-color: #f7f6f7;
 }
 
 .screenHome .homeCardsWrapper .productCard a img {
   width: 100%;
-}
-
-.screenHome .homeCardsWrapper .productCard a .cardDescription {
-  min-height: 150px;
-  max-height: 150px;
-  overflow: auto;
-}
-
-.screenHome .homeCardsWrapper .productCard a .cardDescription::-webkit-scrollbar {
-  width: .7rem;
-}
-
-.screenHome .homeCardsWrapper .productCard a .cardDescription::-webkit-scrollbar-thumb {
-  background-color: #f7f6f7;
+  margin: 5px 0;
 }

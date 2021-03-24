@@ -29,18 +29,9 @@
             a {
                 color: #3a3a3a;
                 .cardName {
-                    min-height: 60px;
-                }
-
-                img {
-                    width: 100%;
-                }
-
-                .cardDescription {
-                    min-height: 150px;
-                    max-height: 150px;
+                    height: 60px;
                     overflow: auto;
-
+                    line-height: 17.5px;
                     &::-webkit-scrollbar {
                         width: .7rem;
                     }
@@ -50,6 +41,10 @@
                     }
                 }
 
+                img {
+                    width: 100%;
+                    margin: 5px 0;
+                }
             }
         }
     }
