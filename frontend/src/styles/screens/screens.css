@@ -12,8 +12,136 @@
 
 .screenHome .homeCardsWrapper {
   display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
   flex-wrap: wrap;
+}
+
+.screenProduct {
+  width: 100%;
+}
+
+.screenProduct .buttonGoBack {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.screenProduct .buttonGoBack a {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 8px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f6f6;
+  color: #6b6a6a;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.screenProduct .screenProductTitle {
+  min-height: 10vh;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.screenProduct .screenProductWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.screenProduct .screenProductWrapper .screenProductLeft {
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.screenProduct .screenProductWrapper .screenProductLeft .screenProductLeftImage img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight {
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightText {
+  height: 25vh;
+  font-size: 1.85rem;
+  font-weight: 500;
+  padding-right: 10px;
+  overflow: auto;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightText::-webkit-scrollbar {
+  width: .7rem;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightText::-webkit-scrollbar-thumb {
+  background-color: #f7f6f6;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightRating {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightPrice {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightCard {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #f9f9fb;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightCard button {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightCard .enabledButton {
+  background: #000;
+  transition: all .35s ease-in-out;
+}
+
+@media (hover: hover) {
+  .screenProduct .screenProductWrapper .screenProductRight .screenProductRightCard .enabledButton:hover {
+    background: #0e0f24;
+    color: #a7e8fc;
+  }
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightCard .disabledButton {
+  background: #f7f6f6;
+  color: #cac8c8;
 }

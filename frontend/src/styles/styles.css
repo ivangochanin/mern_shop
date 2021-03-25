@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
 main {
-  min-height: 87vh;
+  height: 87vh;
   padding: 3rem 0;
+  overflow: auto;
+}
+
+main::-webkit-scrollbar {
+  width: 1rem;
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: #c4c2c4;
 }
 
 .container {
@@ -20,7 +29,8 @@ main {
 .is-active {
   /* transition: all .5s ease-in-out !important; */
   color: #3a3a3a !important;
-  text-decoration: underline solid #3a3a3a 5px !important;
+  -webkit-text-decoration: underline solid #3a3a3a 5px !important;
+          text-decoration: underline solid #3a3a3a 5px !important;
 }
 
 .is-active .linkIcons {
@@ -33,14 +43,17 @@ main {
   font-size: 1.6rem;
   text-transform: uppercase;
   -webkit-box-shadow: 0px 2px 1px 1px rgba(250, 250, 250, 0.61);
-  -moz-box-shadow: 0px 2px 1px 1px rgba(250, 250, 250, 0.61);
   box-shadow: 0px 2px 1px 1px rgba(250, 250, 250, 0.61);
 }
 
 .navbar .navbarWrapper {
   min-height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .navbar .navbarWrapper .brand {
@@ -49,9 +62,17 @@ main {
 }
 
 .navbar .navbarWrapper .brand a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   height: 25px;
 }
@@ -63,6 +84,7 @@ main {
   background-color: #a7e8fc;
   border-radius: 20%;
   margin-right: 10px;
+  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
@@ -72,13 +94,15 @@ main {
   font-family: 'Libre Barcode 39', cursive;
   font-size: 4rem;
   color: #3a3a3a;
+  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
 @media (hover: hover) {
   .navbar .navbarWrapper .brand a:hover .dot {
     background: #8de3fd;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .navbar .navbarWrapper .brand a:hover .text {
     color: #3a3a3a;
@@ -91,8 +115,12 @@ main {
 
 .navbar .navbarWrapper .navLinks ul {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .navbar .navbarWrapper .navLinks ul li {
@@ -106,17 +134,23 @@ main {
   font-size: 1.25rem;
   font-weight: 900;
   letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .navbarWrapper .navLinks ul li a .linkIcons {
   color: #858585;
+  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
 .navbar .navbarWrapper .navLinks ul li a span {
   margin-left: 2.5px;
+  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
@@ -130,9 +164,15 @@ main {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 5vh;
   background: #fff;
   color: #000;
@@ -159,19 +199,122 @@ main {
 }
 
 .screenHome .homeCardsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.screenProduct .screenProductTitle {
+  min-height: 10vh;
+  font-size: 3rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.screenProduct .screenProductWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+
+.screenProduct .screenProductWrapper .screenProductLeft {
+  width: 47.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.screenProduct .screenProductWrapper .screenProductLeft .screenProductLeftImage img {
+  width: 100%;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight {
+  width: 47.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightText {
+  height: 25vh;
+  font-size: 1.9rem;
+  font-weight: 500;
+  overflow: auto;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightText::-webkit-scrollbar {
+  width: .7rem;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightText::-webkit-scrollbar-thumb {
+  background-color: #c4c2c4;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightRating {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightPrice {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightCard {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #6e6e6e;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightCard button {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightCard .enabledButton {
+  background-color: #000;
+}
+
+.screenProduct .screenProductWrapper .screenProductRight .screenProductRightCard .disabledButton {
+  background-color: #bebec0;
 }
 
 .productCard {
   width: 270px;
-  margin-top: 20px;
+  margin: 10px 11.25px;
   padding: 20px;
   -webkit-box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
-  -moz-box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
   box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
 }
 
@@ -183,6 +326,14 @@ main {
   height: 60px;
   overflow: auto;
   line-height: 17.5px;
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+@media (hover: hover) {
+  .productCard a .cardName:hover {
+    opacity: .8;
+  }
 }
 
 .productCard a .cardName::-webkit-scrollbar {
@@ -193,7 +344,38 @@ main {
   background-color: #f7f6f7;
 }
 
-.productCard a img {
+.productCard a .productImageWrapper {
+  height: 180px;
+  overflow: hidden;
+}
+
+.productCard a .productImageWrapper img {
   width: 100%;
-  margin: 5px 0;
+  -webkit-transform-origin: 50% 65%;
+          transform-origin: 50% 65%;
+  -webkit-transition: -webkit-transform 1s, -webkit-filter 1s ease-in-out;
+  transition: -webkit-transform 1s, -webkit-filter 1s ease-in-out;
+  transition: transform 1s, filter 1s ease-in-out;
+  transition: transform 1s, filter 1s ease-in-out, -webkit-transform 1s, -webkit-filter 1s ease-in-out;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+@media (hover: hover) {
+  .productCard a .productImageWrapper img:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+}
+
+.rating {
+  margin-top: 20px;
+}
+
+.rating .starText {
+  color: #3a3a3a;
+  margin-left: 15px;
+  font-weight: 400;
 }

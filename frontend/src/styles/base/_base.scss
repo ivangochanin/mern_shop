@@ -1,7 +1,15 @@
 @import "./mediaqueries";
 main {
-    min-height: 87vh;
-    padding: 3rem 0;    
+    height: 87vh;
+    padding: 3rem 0; 
+    overflow: auto;  
+    &::-webkit-scrollbar {
+      width: 1rem;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #c4c2c4;
+    } 
   }
 
 .container {

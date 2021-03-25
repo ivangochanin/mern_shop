@@ -26,7 +26,7 @@ const Rating = ({ value , text }) => {
                 {value >= 5 ? <FaStar /> : value >= 4.5 ? <FaStarHalfAlt /> : <FaRegStar />}
             </span>
             </IconContext.Provider>
-            <span className="starText">{text && text}</span> {/* {text ? text : ''}  =  {text && text}*/}
+            <span className="starText">{text && text}</span> {/* { {text ? text : ''}  =  {text && text} } */}
         </div>
     )
 }
