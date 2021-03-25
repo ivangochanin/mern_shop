@@ -20,8 +20,7 @@ main {
 .is-active {
   /* transition: all .5s ease-in-out !important; */
   color: #3a3a3a !important;
-  -webkit-text-decoration: underline solid #3a3a3a 5px !important;
-          text-decoration: underline solid #3a3a3a 5px !important;
+  text-decoration: underline solid #3a3a3a 5px !important;
 }
 
 .is-active .linkIcons {
@@ -34,17 +33,14 @@ main {
   font-size: 1.6rem;
   text-transform: uppercase;
   -webkit-box-shadow: 0px 2px 1px 1px rgba(250, 250, 250, 0.61);
+  -moz-box-shadow: 0px 2px 1px 1px rgba(250, 250, 250, 0.61);
   box-shadow: 0px 2px 1px 1px rgba(250, 250, 250, 0.61);
 }
 
 .navbar .navbarWrapper {
   min-height: 8vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 
 .navbar .navbarWrapper .brand {
@@ -53,17 +49,9 @@ main {
 }
 
 .navbar .navbarWrapper .brand a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
+  justify-content: flex-start;
+  align-items: center;
   width: max-content;
   height: 25px;
 }
@@ -75,7 +63,6 @@ main {
   background-color: #a7e8fc;
   border-radius: 20%;
   margin-right: 10px;
-  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
@@ -85,15 +72,13 @@ main {
   font-family: 'Libre Barcode 39', cursive;
   font-size: 4rem;
   color: #3a3a3a;
-  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
 @media (hover: hover) {
   .navbar .navbarWrapper .brand a:hover .dot {
     background: #8de3fd;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
   }
   .navbar .navbarWrapper .brand a:hover .text {
     color: #3a3a3a;
@@ -106,12 +91,8 @@ main {
 
 .navbar .navbarWrapper .navLinks ul {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .navbar .navbarWrapper .navLinks ul li {
@@ -125,23 +106,17 @@ main {
   font-size: 1.25rem;
   font-weight: 900;
   letter-spacing: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .navbar .navbarWrapper .navLinks ul li a .linkIcons {
   color: #858585;
-  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
 .navbar .navbarWrapper .navLinks ul li a span {
   margin-left: 2.5px;
-  -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
 
@@ -155,15 +130,9 @@ main {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 5vh;
   background: #fff;
   color: #000;
@@ -190,48 +159,41 @@ main {
 }
 
 .screenHome .homeCardsWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.screenHome .homeCardsWrapper .productCard {
+.productCard {
   width: 270px;
   margin-top: 20px;
   padding: 20px;
   -webkit-box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
   box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
 }
 
-.screenHome .homeCardsWrapper .productCard a {
+.productCard a {
   color: #3a3a3a;
 }
 
-.screenHome .homeCardsWrapper .productCard a .cardName {
-  min-height: 60px;
-}
-
-.screenHome .homeCardsWrapper .productCard a img {
-  width: 100%;
-}
-
-.screenHome .homeCardsWrapper .productCard a .cardDescription {
-  min-height: 150px;
-  max-height: 150px;
+.productCard a .cardName {
+  height: 60px;
   overflow: auto;
+  line-height: 17.5px;
 }
 
-.screenHome .homeCardsWrapper .productCard a .cardDescription::-webkit-scrollbar {
+.productCard a .cardName::-webkit-scrollbar {
   width: .7rem;
 }
 
-.screenHome .homeCardsWrapper .productCard a .cardDescription::-webkit-scrollbar-thumb {
+.productCard a .cardName::-webkit-scrollbar-thumb {
   background-color: #f7f6f7;
+}
+
+.productCard a img {
+  width: 100%;
+  margin: 5px 0;
 }

@@ -1,0 +1,62 @@
+.productCard {
+  width: 270px;
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
+  box-shadow: 2px 2px 6px 0px rgba(232, 229, 232, 0.63);
+}
+
+.productCard a {
+  color: #3a3a3a;
+}
+
+.productCard a .cardName {
+  height: 60px;
+  overflow: auto;
+  line-height: 17.5px;
+  transition: all .35s ease-in-out;
+}
+
+@media (hover: hover) {
+  .productCard a .cardName:hover {
+    opacity: .8;
+  }
+}
+
+.productCard a .cardName::-webkit-scrollbar {
+  width: .7rem;
+}
+
+.productCard a .cardName::-webkit-scrollbar-thumb {
+  background-color: #f7f6f7;
+}
+
+.productCard a .productImageWrapper {
+  height: 180px;
+  overflow: hidden;
+}
+
+.productCard a .productImageWrapper img {
+  width: 100%;
+  transform-origin: 50% 65%;
+  transition: transform 1s, filter 1s ease-in-out;
+  filter: brightness(90%);
+}
+
+@media (hover: hover) {
+  .productCard a .productImageWrapper img:hover {
+    transform: scale(1.15);
+    filter: brightness(100%);
+  }
+}
+
+.rating {
+  margin-top: 20px;
+}
+
+.rating .starText {
+  color: #3a3a3a;
+  margin-left: 15px;
+  font-weight: 400;
+}

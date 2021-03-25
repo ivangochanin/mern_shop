@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Rating from "./Rating"
 
 const ProductCard = ({product}) => {
 	return (
@@ -8,9 +9,9 @@ const ProductCard = ({product}) => {
 				<h3 className="cardName">{product.name}</h3>
 			</Link>
 			<Link to={`/product/${product._id}`}>
-				<img src={product.image} alt={product.name} />
+				<div className="productImageWrapper"><img src={product.image} alt={product.name} /></div>
 			</Link>
-				<p>{product.rating} from {product.numReviews}</p>
+				<Rating value={product.rating} text={`${product.numReviews} reviews`}/>
 				<h3>$ {product.price}</h3>
 		</div>
 	);
