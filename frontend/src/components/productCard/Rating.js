@@ -1,7 +1,7 @@
 import React from 'react'
 import { IconContext } from "react-icons"
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa"
-import PropTypes from 'prop-types'
+/* import PropTypes from 'prop-types' */
 
 const Rating = ({ value , text }) => {
     return (
@@ -33,9 +33,9 @@ const Rating = ({ value , text }) => {
 
 
 // type check props - if something is wrong we see warning in console
-Rating.propTypes = {
+/* Rating.propTypes = {
    value: PropTypes.number.isRequired,
    text: PropTypes.string.isRequired
-}
+} */
 
 export default Rating

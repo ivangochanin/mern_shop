@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Rating from "../components/productCard/Rating";
-import products from "../products";
+import axios from 'axios'
 
-const Product = (props) => {
+const Product = ({match}) => {
 	// Match what is in App.js /product/:id - <Route path='/product/:id' component={Product} />
-	const product = products.find((item) => item._id === props.match.params.id);
-	const buttonClick = () => {
-		console.log("clicked");
-	};
+	// const product = products.find((item) => item._id === props.match.params.id);
+	const [product, setProduct] = useState({})
+	useEffect(() => {
+		const fetchProduct = async () => {
+		  const {data} = await axios.get(`/api/products/${match.params.id}`)
+          setProduct(data)
+		}
+		fetchProduct()
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [])
 	return (
 		<div className="screen screenProduct">
             <div className="buttonGoBack"><Link to="/">Go Back To All Products</Link></div>
@@ -39,7 +45,7 @@ const Product = (props) => {
 						</div>
 
 						<button
-							onClick={buttonClick}
+						
 							type="button"
 							className={
 								product.countInStock > 0 ? "enabledButton" : "disabledButton"
