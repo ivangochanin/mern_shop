@@ -13,8 +13,7 @@ const Product = ({match}) => {
           setProduct(data)
 		}
 		fetchProduct()
-	// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [])
+	}, [match])
 	return (
 		<div className="screen screenProduct">
             <div className="buttonGoBack"><Link to="/">Go Back To All Products</Link></div>
