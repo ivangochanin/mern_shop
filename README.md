@@ -1,3 +1,5 @@
+Learning MERN stack
+
 
 # Frontend & root
 `yarn install`
