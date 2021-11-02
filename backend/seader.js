@@ -51,7 +51,7 @@ const destroyData = async () => {
     }
 }
 
-// index 2 is hatever is pasted empty or -d for destroy
+// index 2 is whatever is pasted empty or -d for destroy
 // process.argv[2]
 
 process.argv[2] === '-d' ? destroyData() : importData()

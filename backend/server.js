@@ -1,12 +1,12 @@
 import express from 'express' 
 import dotenv from 'dotenv'
-import conectDB from './config/db.js'
+import connectDB from './config/db.js'
 import productRoutes from './routes/productRoutes.js'
 import {notFind, errorHandler} from './middleware/errorMiddleware.js'
 
 
 dotenv.config()
-conectDB()
+connectDB()
 
 const app = express()
 

@@ -60,7 +60,7 @@ const products = [
   {
     name: 'Bosendorfer 170 1940',
     image: '/images/pianoBosendorfer.jpg',
-    description: 'Original Austrian Bösendorfer grand piano. This beautifully sounding Bosendorfer 170 was recently restored. New tuning pins and complete reconditioning of the action. If desired - Hammerheads could be replaced. In the price we include transport. The color is currently Black matte. The action as well as the keyboard have been overhauled and can be played with precision. Original great deep Bösendorfer sound.',
+    description: 'Original Austrian Bosendorfer grand piano. This beautifully sounding Bosendorfer 170 was recently restored. New tuning pins and complete reconditioning of the action. If desired - Hammerheads could be replaced. In the price we include transport. The color is currently Black matte. The action as well as the keyboard have been overhauled and can be played with precision. Original great deep Bosendorfer sound.',
     brand: 'Bosendorfer',
     category: 'Instruments',
     price: 11201.99,
